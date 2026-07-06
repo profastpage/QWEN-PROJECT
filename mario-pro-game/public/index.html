@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: linear-gradient(to bottom, #5c94fc 0%, #5c94fc 100%);
+      font-family: 'Press Start 2P', 'Courier New', monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    
+    #game-container {
+      position: relative;
+      border: 4px solid #000;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    
+    canvas {
+      display: block;
+      background: #5c94fc;
+    }
+    
+    .controls-info {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      text-shadow: 2px 2px 0 #000;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+    <div class="controls-info">
+      ← → or A/D: Move | SPACE/W/↑: Jump | R: Restart
+    </div>
+  </div>
+</body>
+</html>
