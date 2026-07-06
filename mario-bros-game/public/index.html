@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Bros Style Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        <div class="ui-overlay">
+            <div class="score">Puntos: <span id="scoreValue">0</span></div>
+            <div class="lives">Vidas: <span id="livesValue">3</span></div>
+        </div>
+        <div class="controls-hint">
+            ← → Moverse | ESPACIO Saltar | R Reiniciar
+        </div>
+        <div class="game-over" id="gameOverScreen">
+            <h2>¡Juego Terminado!</h2>
+            <p>Puntuación final: <span id="finalScore">0</span></p>
+            <button onclick="restartGame()">Jugar de Nuevo</button>
+        </div>
+        <div class="win-message" id="winScreen">
+            <h2>¡Felicidades!</h2>
+            <p>¡Has completado el nivel!</p>
+            <p>Puntuación: <span id="winScore">0</span></p>
+            <button onclick="restartGame()">Jugar de Nuevo</button>
+        </div>
+    </div>
+</body>
+</html>
