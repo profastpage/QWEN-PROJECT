@@ -2,25 +2,25 @@
 # Dependencies
 node_modules/
 
+# Build artifacts
+dist/
+build/
+target/
+
 # Environment variables
 .env
 .env.local
-*.env.*
+.env.*
 
-# Logs
-*.log
-
-# Editor/IDE files
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 *.tmp
 
-# Build outputs
-dist/
-build/
-target/
+# Logs
+*.log
 
 # Python cache
 __pycache__/
@@ -33,11 +33,11 @@ coverage/
 htmlcov/
 .coverage
 
-# OS generated files
+# OS files
 .DS_Store
 Thumbs.db
 
-# Compressed files
+# Compression files
 *.zip
 *.gz
 *.tar
@@ -56,8 +56,4 @@ Thumbs.db
 *.Z
 *.lz
 *.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```
